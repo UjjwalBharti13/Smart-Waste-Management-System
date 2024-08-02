@@ -10,7 +10,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
       if (parsedUser.password === password) {
         storeLoginState(email);  // Store the login state
        //   localStorage.setItem("user", JSON.stringify(parsedUser));
-          window.location.href = "../HOME/main.html";
+          window.location.href = "../index.html";
       } else {
           alert("Incorrect password");
       }
