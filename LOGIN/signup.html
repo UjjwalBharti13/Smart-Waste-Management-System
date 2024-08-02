@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="background-slider">
+        <div class="slide" style="background-image: url('../IMAGES/BULB.jpg');"></div>
+        <div class="slide" style="background-image: url('../IMAGES/FOOD.jpg');"></div>
+        <div class="slide" style="background-image: url('../IMAGES/KIT.jpg');"></div>
+    </div>
+    
+    <div class="container">
+        <h3>Sign Up</h3>
+        <form id="signupForm">
+            <div class="field">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="name" placeholder="Full Name" required>
+            </div>
+            <div class="field">
+                <i class="fa-solid fa-user"></i>
+                <input type="email" id="signup-email" placeholder="Email" required>
+            </div>
+            <div class="field">
+                <i class="fa-solid fa-phone"></i>
+                <input type="tel" id="number" placeholder="Phone" required autocomplete="tel">
+            </div>
+            <div class="field">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="signup-password" placeholder="Password" required>
+            </div>
+            <div class="field">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required>
+            </div>
+            <a href="login.html" style="color: green;">Already have an account? Log in</a>
+            <br>
+            <div class="loginCircle">
+                <button class="fa-solid fa-check" type="submit"></button>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-microsoft"></i>
+            </div>
+        </form>
+    </div>
+    
+    <script src="signup.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

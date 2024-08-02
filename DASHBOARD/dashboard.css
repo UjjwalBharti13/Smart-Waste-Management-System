@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Medium gap between containers */
+}
+
+.overview{
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    animation: slideIn 0.5s ease-out;
+    translate: -80px;
+
+} 
+.track-pickup{
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    animation: slideIn 0.5s ease-out;
+} 
+.schedule-pickup {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    animation: slideIn 0.5s ease-out;
+    translate: 80px;
+}
+
+
+
+.overview h2, .track-pickup h2, .schedule-pickup h2 {
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+#map-container {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+#map-container:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+#map {
+    height: 350px;
+    width: 100%;
+    
+}
+
+#locate-me {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#locate-me:hover {
+    background-color: #45a049;
+}
+
+.schedule-pickup {
+    border: 1px solid #ccc;
+    animation: slideIn 0.5s ease-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-pickup:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.schedule-details {
+    display: none;
+    background: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#scheduled-pickup-list li {
+    margin: 10px 0;
+}
+
+#scheduled-pickup-list button {
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#scheduled-pickup-list button:hover {
+    background-color: #45a049;
+}
+
+#schedule-header {
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+#pickup-date, button[type="submit"] {
+    display: block;
+    width: 95%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#waste-type, #product-type, button[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}

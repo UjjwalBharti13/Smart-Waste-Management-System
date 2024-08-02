@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rewards - Smart Waste Management</title>
+  <link rel="stylesheet" href="reward.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Rewards</h1>
+      <nav>
+        <a href="../DASHBOARD/dashboard.html">Dashboard</a>
+        <a href="../TRACK-ORDER/track.html">Track Pickup</a>
+        <a href="../SDL-PICKUP/sdl.html">Scheduled Pickup</a>
+        <a href="../CONTACT US/contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="rewards-section">
+      <h2>Your Reward Points</h2>
+      <p id="points">0</p>
+      
+      <h3>Donate Product</h3>
+      <form id="donate-form">
+        <label for="product-type">Product Type:</label>
+        <select id="product-type" required>
+          <option value="clothes">Clothes</option>
+          <option value="plastic">Plastic Waste</option>
+          <option value="toys">Broken Toys</option>
+          <option value="reusable">Reusable Items</option>
+          <option value="electronics-working">Electronics (Working)</option>
+          <option value="electronics-not-working">Electronics (Not Working)</option>
+          <option value="other">Other</option>
+        </select>
+        <div id="other-points-container" style="display: none;">
+          <label for="other-points">Enter Points for Other:</label>
+          <input type="number" id="other-points" min="0">
+        </div>
+        <button type="submit">Donate</button>
+      </form>
+
+      <h3>Redeem Points</h3>
+      <p id="total-points"></p>
+      <form id="redeem-form">
+        <label for="redeem-amount">Amount to Redeem:</label>
+        <input type="number" id="redeem-amount" min="1" required>
+        <button type="submit">Redeem</button>
+      </form>
+      <p id="redeem-message"></p>
+    </section>
+    <div class="info-box">
+      <p>You can redeem your points and use them for your recharge, bill payment, online shopping, and many more ways!</p>
+    </div>
+  </main>
+
+  <script src="reward.js"></script>
+</body>
+</html>

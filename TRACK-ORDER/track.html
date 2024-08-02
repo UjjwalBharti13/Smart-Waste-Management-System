@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Tracking - Smart Waste Management</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="track.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Live Tracking</h1>
+      <nav>
+        <a href="../DASHBOARD/dashboard.html">Dashboard</a>
+        <a href="../SDL-PICKUP/sdl.html">Scheduled Pickup</a>
+        <a href="../REWARD/reward.html">Rewards</a>
+        <a href="../CONTACT US/contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="tracking">
+      <h2>Live Pickup Tracking</h2>
+      <div id="map-container">
+        <div id="map"></div>
+        <div id="live-info">
+          <h3>Current Location</h3>
+          <p id="location-name">Fetching location...</p>
+          <h3>Total Scheduled Pickups</h3>
+          <p id="total-pickups">0</p>
+          <h3>Scheduled Pickups</h3>
+          <ul id="pickup-list">
+           
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="track.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="background-slider">
+        <div class="slide" style="background-image: url('../IMAGES/BULB.jpg');"></div>
+        <div class="slide" style="background-image: url('../IMAGES/FOOD.jpg');"></div>
+        <div class="slide" style="background-image: url('../IMAGES/KIT.jpg');"></div>
+    </div>
+    
+    <div class="container">
+        <h3>Login</h3>
+        <form id="loginForm">
+            <div class="field">
+                <i class="fa-solid fa-user"></i>
+                <input type="email" id="login-email" placeholder="Email" required>
+            </div>
+            <div class="field">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="login-password" placeholder="Password" required>
+            </div>
+            <a href="forgot.html">Forgot Password</a>
+            <br>
+            <a href="signup.html">Sign Up</a>
+            <div class="loginCircle">
+                <button class="fa-solid fa-check" type="submit"></button>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-microsoft"></i>
+            </div>
+        </form>
+    </div>
+    
+    <script src="login.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>
